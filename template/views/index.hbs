@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+  
+  </head>
+
+  <body>
+    <div class="main-container">
+
+    <!--<h1>Static Root From Handlebar</h1>-->
+    <!--<h1>{{title}}</h1> replaced by partial-->
+    <!--Partials added-->
+     {{>header}}  <!--Renders "title" property in / -->
+
+     <p>One-stop solution for your weather queries</p>
+
+     <form>
+       <input placeholder="Location">
+       <button>Search</button>
+     </form>
+
+     <p id='msg-1'></p>
+     <p id='msg-2'></p>
+     <p id='msg-3'></p>
+    </div>
+    
+     
+     <!--<p>Created by {{name}}</p> replaced by partial-->
+     {{>footer}}
+
+    <!--Scripts are generally loaded at the end of body so that it can load and operate on all the tags defined in it like <form> etc -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>

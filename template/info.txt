@@ -1,0 +1,17 @@
+"views" folder must be named so for the Express View Engine to understand.
+
+This directory will containe the Handlebar views
+
+Handlebar templates are used to serve dynamic template document instead of static document from Public directory
+
+{{}} is an handlebar syntax
+
+
+If we want a custom location andd name for "views" folder, we have to configure it in "app.js" by setting the absolute path
+
+
+Handlebar Partials are templates which are reusable
+They are small parts of an entire html file like a <div> or a <h1> tag
+
+To run a Partial inside a view we must use {{>}}
+Partials renders property specific to that view

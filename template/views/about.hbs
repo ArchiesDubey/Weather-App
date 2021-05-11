@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>About Us</title>
+    <link rel="icon" href="/img/weather.png">
+     <link rel="stylesheet" href="/css/styles.css" >
+  </head>
+
+  <body>
+    <div class="main-container">
+    <!-- <h1>Static About From Public</h1> -->
+    
+    <!--<h1>{{title}}</h1> replaced by partial-->
+      <!--Partials added-->
+      {{>header}} <!--Renders "title" property in /about -->
+
+    <img src="/img/Me.jpg" class="potrait" >
+     <!--<p>Created by {{name}}</p> replaced by partial-->
+    </div>
+
+     {{>footer}}
+
+     
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+     <link rel="stylesheet" href="/css/styles.css" >
+  </head>
+
+  <body>
+    <div class="main-container">
+    <!-- <h1>Static Help From Public</h1> -->
+    <!--Partials added-->
+     {{>header}} <!--Renders "title" property in /help -->
+    <p>{{message}}<p>
+    <!--<p>Created by {{name}}</p> replaced by partial-->
+    </div>
+     {{>footer}}
+  </body>
+</html>

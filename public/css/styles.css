@@ -1,0 +1,68 @@
+body{
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-container{
+  flex-grow: 1;
+
+}
+footer{
+  color:#888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+
+}
+
+header{
+  margin-top:16px;
+  margin-bottom:32px;
+}
+
+form{
+  margin-top:16px;
+  margin-bottom:48px;
+}
+
+input{
+  margin-top:16px;
+  border:1px solid #cccc;
+  padding:8px;
+}
+
+button{
+  cursor: pointer;
+  border: 1px solid #888888;
+  background:#888888;
+  color:whitesmoke;
+  padding: 8px;
+
+}
+
+h1{
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+header a{
+  color:rgba(4, 36, 36, 0.533);
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 16px;
+   
+}
+
+.potrait {
+  width: 250px;
+
+}
+
+
+
