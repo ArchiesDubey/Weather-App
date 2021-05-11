@@ -1,4 +1,4 @@
-console.log("Client side app.js")
+// console.log("Client side app.js")
 
 const weatherForm = document.querySelector('form');
 const submit=document.querySelector('input');
