@@ -84,7 +84,7 @@ const app = express()
       // })
 
 //Serving up JSON with Query string enabled
-app.get("/weather",(req,res)=>{
+app.get("/api/weather",(req,res)=>{
   
   if(!req.query.address)
   { 

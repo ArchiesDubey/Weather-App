@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit',(event)=>{
 
 //fetch() to call the weather api endpoint
   //Deployment change 3 `http://localhost:4000 ie the domain name is removed
-  fetch(`/weather?address=${location}`).then((response)=>{
+  fetch(`/api/weather?address=${location}`).then((response)=>{
     response.json().then((data)=>{
     if(data.error) 
     {
