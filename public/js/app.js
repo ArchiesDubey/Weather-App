@@ -18,7 +18,8 @@ weatherForm.addEventListener('submit',(event)=>{
   msgThree.textContent="";
 
 //fetch() to call the weather api endpoint
-  fetch(`http://localhost:4000/weather?address=${location}`).then((response)=>{
+  //Deployment change 3 `http://localhost:4000 ie the domain name is removed
+  fetch(`/weather?address=${location}`).then((response)=>{
     response.json().then((data)=>{
     if(data.error) 
     {

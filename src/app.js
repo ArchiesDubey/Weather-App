@@ -12,6 +12,9 @@ const _dirname=process.cwd()//path.resolve()//process.env.PWD// //
   // console.log(path.join(_dirname,'../public'))
 const app = express()
 
+//Deployment change 1 - Port setup
+  const port= process.env.PORT || 3000
+
 
 //Define paths for Express config
   //Serving up the entire Public Directory using Express middleware
@@ -138,5 +141,7 @@ app.get("/weather",(req,res)=>{
     })
   })
 
+
+
 //Starting server
-app.listen(4000,()=>console.log("Server started"))
+app.listen(port,()=>console.log("Server started at "+port))

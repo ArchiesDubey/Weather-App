@@ -1,0 +1,21 @@
+//Note 1
+encodeURIComponent(//input) = returns a string and works similar to "+" operator.
+  BUT if the (//input) consists of special character , the simple "+" would break whereas "encodeURIComponent" would return an encoded string .
+
+//Note 2
+Both of the below values are part of the wrapper function that wraps the entire Nodejs file as seen while debgging on Chrome
+But below ones can be avoided if cross-OS functionality is required and instead use core Node Module "path" 
+  _dirname = absolute path to current directory
+  _filename= absolute path to current file
+
+//Note 3
+Nodemon by default checks for changes only in .js files
+We can change this by adding an "-e js,hbs,......."
+"-e" tag is followed by comma separated file extension to look out for
+
+
+//Note 4
+Deployment changes required:-
+  1) Port to process.env.PORT 
+  2)start script in package.json = node src/app.js
+  3)Remove domain name from API call
